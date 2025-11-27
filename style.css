@@ -1,0 +1,213 @@
+* {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+    }
+
+    .app {
+      max-width: 900px;
+      width: 100%;
+      background: #020617;
+      border-radius: 16px;
+      padding: 20px 24px 28px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      border: 1px solid #1f2937;
+    }
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      margin: 14px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #a5b4fc;
+    }
+
+    .players {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .player-card {
+      background: #020617;
+      border-radius: 12px;
+      padding: 10px 10px 12px;
+      border: 1px solid #1f2937;
+    }
+
+    .player-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .player-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .score {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .score-label {
+      font-size: 0.75rem;
+      color: #6b7280;
+      margin-right: 4px;
+    }
+
+    .score-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    button {
+      border-radius: 999px;
+      border: none;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      background: #1d4ed8;
+      color: white;
+      transition: transform 0.06s ease, box-shadow 0.06s ease, background 0.12s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(30, 64, 175, 0.5);
+      background: #2563eb;
+    }
+
+    button.small {
+      padding: 4px 8px;
+      font-size: 0.75rem;
+    }
+
+    button.negative {
+      background: #b91c1c;
+    }
+
+    button.negative:hover {
+      background: #dc2626;
+      box-shadow: 0 4px 10px rgba(185, 28, 28, 0.5);
+    }
+
+    button.secondary {
+      background: #374151;
+    }
+
+    button.secondary:hover {
+      background: #4b5563;
+      box-shadow: 0 4px 10px rgba(55, 65, 81, 0.5);
+    }
+
+    .prompt-section {
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 12px;
+      background: radial-gradient(circle at top left, #1d283a, #020617 55%);
+      border: 1px solid #1f2937;
+    }
+
+    .prompt-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9ca3af;
+      margin-bottom: 4px;
+    }
+
+    .prompt-text {
+      min-height: 40px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .prompt-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-note {
+      margin-top: 14px;
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    .name-inputs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .name-inputs input {
+      flex: 1;
+      min-width: 0;
+      padding: 6px 8px;
+      border-radius: 999px;
+      border: 1px solid #4b5563;
+      background: #020617;
+      color: #e5e7eb;
+      font-size: 0.8rem;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .round-label {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    .round-label span {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .reset-btn {
+      font-size: 0.75rem;
+      padding: 5px 10px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 10px;
+      }
+      .players {
+        grid-template-columns: 1fr;
+      }
+    }
